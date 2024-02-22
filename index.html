@@ -117,23 +117,26 @@
                   ></path></svg
               ></a>
             </div>
-            <!-- <div
+            <div
               class="hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex"
             >
-              <a href="mailto:bartosz.jarocki@hey.com"
+              <a href="mailto:farreljordan80@gmail.com"
                 ><span class="underline">farreljordan80@gmail.com</span></a
-              ><a href="tel:+48530213401"
-                ><span class="underline">+48530213401</span></a
+              ><a href="tel:+6285776981017"
+                ><span class="underline">+6285776981017</span></a
               >
-            </div> -->
+            </div>
           </div>
           <span
             class="relative flex shrink-0 overflow-hidden rounded-xl size-28"
-            ><span
-              class="flex h-full w-full items-center justify-center rounded-xl bg-muted"
-              >FJ</span
-            ></span
           >
+            <!-- other colors= "bg-sky-950" || "bg-neutral-700" -->
+            <img
+              class="aspect-square h-full w-full bg-slate-700"
+              alt="FJ"
+              src="picture.png"
+            />
+          </span>
         </div>
         <section class="flex min-h-0 flex-col gap-y-3">
           <h2 class="text-xl font-bold">About</h2>
@@ -527,13 +530,78 @@
             </div>
           </div>
         </section>
+        <!-- TODO: Fill Certificates & remove hidden from class -->
+        <section
+          class="hidden min-h-0 flex-col gap-y-3 print-force-new-page scroll-mb-16"
+        >
+          <h2 class="text-xl font-bold">Certificates</h2>
+          <div
+            class="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3"
+          >
+            <div
+              class="rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border border-muted p-3"
+            >
+              <div class="flex flex-col space-y-1.5">
+                <div class="space-y-1">
+                  <h3 class="font-semibold tracking-tight text-base">
+                    <a
+                      href="https://github.com/TugasAkhir-QUIC/public-moq-demo"
+                      target="_blank"
+                      class="inline-flex items-center gap-1 hover:underline"
+                      >Associate Cloud Engineer<!-- -->
+                      <span class="size-1 rounded-full bg-green-500"></span
+                    ></a>
+                  </h3>
+                  <div class="hidden font-mono text-xs underline print:visible">
+                    public-moq-demo
+                  </div>
+                  <p class="text-muted-foreground font-mono text-xs">
+                    An open-source project of an adaptive video streaming
+                    application utilizing QUIC
+                  </p>
+                </div>
+              </div>
+              <div
+                class="text-pretty font-mono text-sm text-muted-foreground mt-auto flex"
+              >
+                <div class="mt-2 flex flex-wrap gap-1">
+                  <div
+                    class="inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/60 px-1 py-0 text-[10px]"
+                  >
+                    QUIC
+                  </div>
+                  <div
+                    class="inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/60 px-1 py-0 text-[10px]"
+                  >
+                    WebTransport
+                  </div>
+                  <div
+                    class="inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/60 px-1 py-0 text-[10px]"
+                  >
+                    Go
+                  </div>
+                  <div
+                    class="inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/60 px-1 py-0 text-[10px]"
+                  >
+                    TypeScript
+                  </div>
+                  <div
+                    class="inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/60 px-1 py-0 text-[10px]"
+                  >
+                    MPEG-DASH
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
       <p
         class="fixed bottom-0 left-0 right-0 hidden border-t border-t-muted bg-white p-1 text-center text-sm text-muted-foreground print:hidden xl:block"
       >
         Hello :)
       </p>
-      <button
+      <!-- <button
         class="items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10 fixed bottom-4 right-4 flex rounded-full shadow-2xl print:hidden xl:hidden"
       >
         <svg
@@ -552,7 +620,7 @@
             d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3"
           ></path>
         </svg>
-      </button>
+      </button> -->
     </main>
   </body>
 </html>
