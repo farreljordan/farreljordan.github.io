@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <style type="text/tailwindcss">
+      @tailwind base;
+      @tailwind components;
+
+      .tooltip {
+        @apply invisible absolute;
+      }
+
+      .has-tooltip:hover .tooltip {
+        @apply visible z-50;
+      }
+
+      @tailwind utilities;
+    </style>
     <title>Farrel Jordan | Computer Science Student</title>
   </head>
   <body>
@@ -593,63 +608,305 @@
         </section>
         <!-- TODO: Fill Certificates & remove hidden from class -->
         <section
-          class="hidden min-h-0 flex-col gap-y-3 print-force-new-page scroll-mb-16"
+          class="flex min-h-0 flex-col gap-y-4 print-force-new-page scroll-mb-16"
         >
           <h2 class="text-xl font-bold">Certificates</h2>
-          <div
-            class="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3"
-          >
+          <div class="flex flex-col gap-y-2">
+            <h3 class="font-medium leading-none">
+              <!-- <a class="hover:underline" href="/certificates/exams"
+                >Exam Passed</a
+              > -->
+              Exam Passed
+            </h3>
             <div
-              class="rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border border-muted p-3"
+              class="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3"
             >
-              <div class="flex flex-col space-y-1.5">
-                <div class="space-y-1">
-                  <h3 class="font-semibold tracking-tight text-base">
-                    <a
-                      href="https://github.com/TugasAkhir-QUIC/public-moq-demo"
-                      target="_blank"
-                      class="inline-flex items-center gap-1 hover:underline"
-                      >Associate Cloud Engineer<!-- -->
-                      <span class="size-1 rounded-full bg-green-500"></span
-                    ></a>
-                  </h3>
-                  <div class="hidden font-mono text-xs underline print:visible">
-                    Associate Cloud Engineer
+              <div
+                class="rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border border-muted p-3"
+              >
+                <div class="flex flex-col space-y-1.5">
+                  <div class="space-y-1">
+                    <h3 class="font-semibold tracking-tight text-base">
+                      <a
+                        href="https://google.accredible.com/a9d5f51b-bc11-4a35-a9bb-d7c2fadfd715"
+                        target="_blank"
+                        class="inline-flex items-center gap-1 hover:underline"
+                        >Associate Cloud Engineer<!-- -->
+                        <span class="size-1 rounded-full bg-green-500"></span
+                      ></a>
+                    </h3>
+                    <div
+                      class="hidden font-mono text-xs underline print:visible"
+                    >
+                      Associate Cloud Engineer
+                    </div>
+                    <p class="text-muted-foreground font-mono text-xs">
+                      Passed the Associate Cloud Engineer Exam from Google Cloud
+                    </p>
                   </div>
-                  <p class="text-muted-foreground font-mono text-xs">
-                    An open-source project of an adaptive video streaming
-                    application utilizing QUIC
-                  </p>
+                </div>
+                <div
+                  class="text-pretty font-mono text-sm text-muted-foreground mt-auto flex"
+                >
+                  <div class="mt-2 flex flex-wrap gap-1">
+                    <div
+                      class="inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/60 px-1 py-0 text-[10px]"
+                    >
+                      Google Cloud
+                    </div>
+                  </div>
                 </div>
               </div>
               <div
-                class="text-pretty font-mono text-sm text-muted-foreground mt-auto flex"
+                class="rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border border-muted p-3"
               >
-                <div class="mt-2 flex flex-wrap gap-1">
-                  <div
-                    class="inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/60 px-1 py-0 text-[10px]"
-                  >
-                    QUIC
+                <div class="flex flex-col space-y-1.5">
+                  <div class="space-y-1">
+                    <h3 class="font-semibold tracking-tight text-base">
+                      <a
+                        href="https://www.hackerrank.com/certificates/4114dedd8bbc"
+                        target="_blank"
+                        class="inline-flex items-center gap-1 hover:underline"
+                        >Python (Basic)<!-- -->
+                        <span class="size-1 rounded-full bg-green-500"></span
+                      ></a>
+                    </h3>
+                    <div
+                      class="hidden font-mono text-xs underline print:visible"
+                    >
+                      Python - Hackerrank
+                    </div>
+                    <p class="text-muted-foreground font-mono text-xs">
+                      Passed the Python Basic Exam from Hackerrank
+                    </p>
                   </div>
-                  <div
-                    class="inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/60 px-1 py-0 text-[10px]"
-                  >
-                    WebTransport
+                </div>
+                <div
+                  class="text-pretty font-mono text-sm text-muted-foreground mt-auto flex"
+                >
+                  <div class="mt-2 flex flex-wrap gap-1">
+                    <div
+                      class="inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/60 px-1 py-0 text-[10px]"
+                    >
+                      Hackerrank
+                    </div>
                   </div>
-                  <div
-                    class="inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/60 px-1 py-0 text-[10px]"
-                  >
-                    Go
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-y-2">
+            <h3 class="font-medium leading-none">
+              <a class="hover:underline" href="/certificates/courses"
+                >Course Completed</a
+              >
+            </h3>
+            <div
+              class="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3"
+            >
+              <div
+                class="rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border border-muted p-3"
+              >
+                <div class="flex flex-col space-y-1.5">
+                  <div class="space-y-1">
+                    <h3 class="font-semibold tracking-tight text-base">
+                      <a
+                        href="https://www.cloudskillsboost.google/public_profiles/8206dfc7-340b-4747-a1d5-14cab56b2c3a"
+                        target="_blank"
+                        class="inline-flex items-center gap-1 hover:underline"
+                        >Google Cloud Skills Boost<!-- -->
+                        <span class="size-1 rounded-full bg-green-500"></span
+                      ></a>
+                    </h3>
+                    <div
+                      class="hidden font-mono text-xs underline print:visible"
+                    >
+                      Google Cloud Skills Boost
+                    </div>
+                    <p class="text-muted-foreground font-mono text-xs">
+                      Completed courses and lab challenges about Google Cloud
+                      Platform, Kubernetes, and Terraform
+                    </p>
                   </div>
+                </div>
+                <div
+                  class="text-pretty font-mono text-sm text-muted-foreground flex-col space-y-1.5 flex"
+                >
                   <div
-                    class="inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/60 px-1 py-0 text-[10px]"
+                    class="mt-2 gap-x-2 flex items-center justify-between text-base"
                   >
-                    TypeScript
+                    <div
+                      class="has-tooltip items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/60 px-1 py-0 text-[10px]"
+                    >
+                      <!-- Apprx 215 Hours -->
+                      <span
+                        class="tooltip rounded shadow-lg p-1 bg-gray-100 -mt-8"
+                        >215 Hours</span
+                      >
+                      22 Course
+                    </div>
+                    <div
+                      class="inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/60 px-1 py-0 text-[10px]"
+                    >
+                      <!-- TODO: ubah jadi button -->
+                      View All
+                    </div>
                   </div>
+                </div>
+              </div>
+              <div
+                class="rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border border-muted p-3"
+              >
+                <div class="flex flex-col space-y-1.5">
+                  <div class="space-y-1">
+                    <h3 class="font-semibold tracking-tight text-base">
+                      <!-- <a
+                        href="https://www.dicoding.com/users/farrel87/academies?graduation_status=graduated"
+                        target="_blank"
+                        class="inline-flex items-center gap-1 hover:underline"
+                        >Coursera
+                        <span class="size-1 rounded-full bg-green-500"></span>
+                      </a> -->
+                      <a class="inline-flex items-center gap-1"
+                        >Coursera<!-- -->
+                      </a>
+                    </h3>
+                    <div
+                      class="hidden font-mono text-xs underline print:visible"
+                    >
+                      Coursera
+                    </div>
+                    <p class="text-muted-foreground font-mono text-xs">
+                      Completed courses about Computer Networking, System
+                      Administration, and Machine Learning
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="text-pretty font-mono text-sm text-muted-foreground flex-col space-y-1.5 flex"
+                >
                   <div
-                    class="inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/60 px-1 py-0 text-[10px]"
+                    class="mt-2 gap-x-2 flex items-center justify-between text-base"
                   >
-                    MPEG-DASH
+                    <div
+                      class="has-tooltip items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/60 px-1 py-0 text-[10px]"
+                    >
+                      <!-- Apprx 71 Hours -->
+                      <span
+                        class="tooltip rounded shadow-lg p-1 bg-gray-100 -mt-8"
+                        >71 Hours</span
+                      >
+                      3 Course
+                    </div>
+                    <div
+                      class="inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/60 px-1 py-0 text-[10px]"
+                    >
+                      <!-- TODO: ubah jadi button -->
+                      View All
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border border-muted p-3"
+              >
+                <div class="flex flex-col space-y-1.5">
+                  <div class="space-y-1">
+                    <h3 class="font-semibold tracking-tight text-base">
+                      <a
+                        href="https://www.dicoding.com/users/farrel87/academies?graduation_status=graduated"
+                        target="_blank"
+                        class="inline-flex items-center gap-1 hover:underline"
+                        >Dicoding<!-- -->
+                        <span class="size-1 rounded-full bg-green-500"></span
+                      ></a>
+                    </h3>
+                    <div
+                      class="hidden font-mono text-xs underline print:visible"
+                    >
+                      Dicoding
+                    </div>
+                    <p class="text-muted-foreground font-mono text-xs">
+                      Completed courses about Back End Engineering, Cloud
+                      Engineering, and Programming Languages
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="text-pretty font-mono text-sm text-muted-foreground flex-col space-y-1.5 flex"
+                >
+                  <div
+                    class="mt-2 gap-x-2 flex items-center justify-between text-base"
+                  >
+                    <div
+                      class="has-tooltip items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/60 px-1 py-0 text-[10px]"
+                    >
+                      <!-- Apprx 285 Hours -->
+                      <span
+                        class="tooltip rounded shadow-lg p-1 bg-gray-100 -mt-8"
+                        >285 Hours</span
+                      >
+                      7 Course
+                    </div>
+                    <div
+                      class="inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/60 px-1 py-0 text-[10px]"
+                    >
+                      <!-- TODO: ubah jadi button -->
+                      View All
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border border-muted p-3"
+              >
+                <div class="flex flex-col space-y-1.5">
+                  <div class="space-y-1">
+                    <h3 class="font-semibold tracking-tight text-base">
+                      <!-- <a
+                        href="https://www.dicoding.com/users/farrel87/academies?graduation_status=graduated"
+                        target="_blank"
+                        class="inline-flex items-center gap-1 hover:underline"
+                        >Udemy
+                        <span class="size-1 rounded-full bg-green-500"></span
+                      ></a> -->
+                      <a class="inline-flex items-center gap-1"
+                        >Udemy<!-- --></a
+                      >
+                    </h3>
+                    <div
+                      class="hidden font-mono text-xs underline print:visible"
+                    >
+                      Udemy
+                    </div>
+                    <p class="text-muted-foreground font-mono text-xs">
+                      Completed a course about backend communication design
+                      patterns, protocols, execution and proxying
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="text-pretty font-mono text-sm text-muted-foreground flex-col space-y-1.5 flex"
+                >
+                  <div
+                    class="mt-2 gap-x-2 flex items-center justify-between text-base"
+                  >
+                    <div
+                      class="has-tooltip inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/60 px-1 py-0 text-[10px]"
+                    >
+                      <!-- Apprx 16 Hours -->
+                      <span
+                        class="tooltip rounded shadow-lg p-1 bg-gray-100 -mt-14"
+                        >16 Hours</span
+                      >
+                      1 Course
+                    </div>
+                    <div
+                      class="inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/60 px-1 py-0 text-[10px]"
+                    >
+                      <!-- TODO: ubah jadi button -->
+                      View All
+                    </div>
                   </div>
                 </div>
               </div>
@@ -660,6 +917,8 @@
       <p
         class="fixed bottom-0 left-0 right-0 hidden border-t border-t-muted bg-white p-1 text-center text-sm text-muted-foreground print:hidden xl:block"
       >
+        <!-- TODO: Give my personal comment on where the cursor is poiting at, ex: "This project was really hard!" -->
+        <!-- TODO: Or, randomly give an instruction, ex: "Checkout courses that I took!" (Clickable, then direct the user to the page) -->
         Hello :)
       </p>
       <!-- <button
