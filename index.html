@@ -146,6 +146,7 @@
           </div>
           <span
             class="relative flex shrink-0 overflow-hidden rounded-xl size-28"
+            farrel-comment="That's me :)"
           >
             <!-- other colors= "bg-sky-950" || "bg-neutral-700" -->
             <img
@@ -170,7 +171,10 @@
         </section>
         <section class="flex min-h-0 flex-col gap-y-3">
           <h2 class="text-xl font-bold">Work Experience</h2>
-          <div class="rounded-lg bg-card text-card-foreground">
+          <div
+            class="rounded-lg bg-card text-card-foreground"
+            farrel-comment="My first internship!"
+          >
             <div class="flex flex-col space-y-1.5">
               <div class="flex items-center justify-between gap-x-2 text-base">
                 <h3
@@ -183,7 +187,10 @@
                     >AwanTunai</a
                   ><span class="inline-flex gap-x-1"></span>
                 </h3>
-                <div class="text-sm tabular-nums text-gray-500 italic">
+                <div
+                  class="text-sm tabular-nums text-gray-500 italic"
+                  farrel-comment="7 Months..."
+                >
                   Aug 2023<!-- -->
                   -
                   <!-- -->Feb 2024
@@ -197,49 +204,62 @@
               class="text-pretty font-mono text-muted-foreground mt-2 text-xs"
             >
               <ul class="list-disc list-inside">
-                <li>
+                <li farrel-comment="This one is pretty hard">
                   Developed lender registration, login, and verification by risk
                   and compliance team feature using Spring Boot, MongoDB, and
                   RabbitMQ to address authority (OJK) requirements
                 </li>
-                <li>
+                <li
+                  farrel-comment="Dealing with 3rd party is pretty challenging"
+                >
                   Integrate internal service with API from Privy, a digital
                   identity and signature provider, allowing lenders to sign
                   multiple documents automatically when accepting loan
                   applications
                 </li>
-                <li>
+                <li farrel-comment="This one was tricky, but we make it work!">
                   Developed a notification centre for the whole loan submission
                   and disbursement flow using Firebase Cloud Messaging to
                   address authority (OJK) requirements
                 </li>
-                <li>
+                <li
+                  farrel-comment="Need to handle if the user is not connected to the internet"
+                >
                   Developed a user location tracker feature for our Android
                   applications, allowing the Data Science team to analyze the
                   data and create a model for fraud detection
                 </li>
-                <li>
+                <li
+                  farrel-comment="Need to make sure not to break the existing feature"
+                >
                   Enhances existing collection dashboard to support the new loan
                   type, allowing the collection team to view, assign, review,
                   and add remarks to the new loan applications
                 </li>
-                <li>
+                <li
+                  farrel-comment="Major refactors need to be careful not to introduce a new bug"
+                >
                   Migrate and refactor code on multiple services to separate
                   services that are used for e-commerce and lending flow to
                   address authority (OJK) requirements
                 </li>
-                <li>
+                <li farrel-comment="Very useful during refactoring">
                   Implements unit tests, custom exceptions, swagger, and logging
                   automation to enhance the development experience
                 </li>
-                <li>
+                <li
+                  farrel-comment="My first task and we also used Datadog and Kibana for monitoring"
+                >
                   Contribute to maintaining services by debugging errors that
                   users and quality assurances report
                 </li>
               </ul>
             </div>
           </div>
-          <div class="rounded-lg bg-card text-card-foreground">
+          <div
+            class="rounded-lg bg-card text-card-foreground"
+            farrel-comment="Learned a lot!"
+          >
             <div class="flex flex-col space-y-1.5">
               <div class="flex items-center justify-between gap-x-2 text-base">
                 <h3
@@ -272,29 +292,34 @@
               class="text-pretty font-mono text-muted-foreground mt-2 text-xs"
             >
               <ul class="list-disc list-inside">
-                <li>
+                <li farrel-comment="Deep dive into Google Cloud">
                   Learned how to manage various resources on the Google Cloud
                   Platform, including Computing, Storage, Networking, Data
                   Analytics, and Machine Learning
                 </li>
-                <li>
+                <li farrel-comment="Kubernetes is pretty interesting..">
                   Learned how to configure, manage, and deploy containerized
                   applications to Google Kubernetes Engine
                 </li>
-                <li>
+                <li farrel-comment="My first exposure to Terraform">
                   Learned how to automate infrastructure on Google Cloud
                   Platform with Terraform
                 </li>
-                <li>
+                <li farrel-comment="Easy">
                   Learned how to develop and deploy backend applications using
                   Node.js
                 </li>
-                <li>Learned business presentation and professional English</li>
+                <li farrel-comment="Interesting and useful">
+                  Learned business presentation and professional English
+                </li>
               </ul>
             </div>
           </div>
         </section>
-        <section class="flex min-h-0 flex-col gap-y-3">
+        <section
+          class="flex min-h-0 flex-col gap-y-3"
+          farrel-comment="Top University in Indonesia and I'm very proud of it"
+        >
           <h2 class="text-xl font-bold">Education</h2>
           <div class="rounded-lg bg-card text-card-foreground">
             <div class="flex flex-col space-y-1.5">
@@ -400,6 +425,7 @@
           >
             <div
               class="rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border border-muted p-3"
+              farrel-comment="Part of my final thesis"
             >
               <div class="flex flex-col space-y-1.5">
                 <div class="space-y-1">
@@ -455,6 +481,7 @@
             </div>
             <div
               class="rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border border-muted p-3"
+              farrel-comment="For our client, Faculty of Medicine, University of Indonesia"
             >
               <div class="flex flex-col space-y-1.5">
                 <div class="space-y-1">
@@ -498,6 +525,7 @@
             </div>
             <div
               class="rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border border-muted p-3"
+              farrel-comment="Learned redis by building it from scratch"
             >
               <div class="flex flex-col space-y-1.5">
                 <div class="space-y-1">
@@ -514,7 +542,7 @@
                     Redis-go
                   </div>
                   <p class="text-muted-foreground font-mono text-xs">
-                    A simple implementation of Redis using go
+                    Simple implementation of Redis made from scratch using Go
                   </p>
                 </div>
               </div>
@@ -557,6 +585,7 @@
             </div>
             <div
               class="rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border border-muted p-3"
+              farrel-comment="I didn't know Swagger existed, so I used Google Docs for documentation"
             >
               <div class="flex flex-col space-y-1.5">
                 <div class="space-y-1">
@@ -623,6 +652,7 @@
             >
               <div
                 class="rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border border-muted p-3"
+                farrel-comment="Proud of this one!"
               >
                 <div class="flex flex-col space-y-1.5">
                   <div class="space-y-1">
@@ -659,6 +689,7 @@
               </div>
               <div
                 class="rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border border-muted p-3"
+                farrel-comment="I got this in my first semester"
               >
                 <div class="flex flex-col space-y-1.5">
                   <div class="space-y-1">
@@ -706,6 +737,7 @@
             >
               <div
                 class="rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border border-muted p-3"
+                farrel-comment="Provides a real Google Cloud Environment for the hands-on lab!"
               >
                 <div class="flex flex-col space-y-1.5">
                   <div class="space-y-1">
@@ -737,6 +769,7 @@
                   >
                     <div
                       class="has-tooltip items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/60 px-1 py-0 text-[10px]"
+                      farrel-comment="215 Hours..."
                     >
                       <!-- Apprx 215 Hours -->
                       <span
@@ -747,6 +780,7 @@
                     </div>
                     <div
                       class="inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/60 px-1 py-0 text-[10px]"
+                      farrel-comment="Still in progress..."
                     >
                       <!-- TODO: ubah jadi button -->
                       View All
@@ -756,6 +790,7 @@
               </div>
               <div
                 class="rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border border-muted p-3"
+                farrel-comment="It is a very popular learning platform and for a very good reason"
               >
                 <div class="flex flex-col space-y-1.5">
                   <div class="space-y-1">
@@ -800,6 +835,7 @@
                     </div>
                     <div
                       class="inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/60 px-1 py-0 text-[10px]"
+                      farrel-comment="Still in progress..."
                     >
                       <!-- TODO: ubah jadi button -->
                       View All
@@ -809,6 +845,7 @@
               </div>
               <div
                 class="rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border border-muted p-3"
+                farrel-comment="Popular online boot camp provider in Indonesia"
               >
                 <div class="flex flex-col space-y-1.5">
                   <div class="space-y-1">
@@ -840,6 +877,7 @@
                   >
                     <div
                       class="has-tooltip items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/60 px-1 py-0 text-[10px]"
+                      farrel-comment="285 Hours is crazyy bro"
                     >
                       <!-- Apprx 285 Hours -->
                       <span
@@ -850,6 +888,7 @@
                     </div>
                     <div
                       class="inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/60 px-1 py-0 text-[10px]"
+                      farrel-comment="Still in progress..."
                     >
                       <!-- TODO: ubah jadi button -->
                       View All
@@ -859,6 +898,7 @@
               </div>
               <div
                 class="rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border border-muted p-3"
+                farrel-comment="An excellent course from Hussein Nasser"
               >
                 <div class="flex flex-col space-y-1.5">
                   <div class="space-y-1">
@@ -903,6 +943,7 @@
                     </div>
                     <div
                       class="inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/60 px-1 py-0 text-[10px]"
+                      farrel-comment="Still in progress..."
                     >
                       <!-- TODO: ubah jadi button -->
                       View All
@@ -914,11 +955,12 @@
           </div>
         </section>
       </section>
+      <!-- TODO: Give my personal comment on where the cursor is poiting at, ex: "This project was really hard!" -->
+      <!-- TODO: Or, randomly give an instruction, ex: "Checkout courses that I took!" (Clickable, then direct the user to the page) -->
       <p
+        id="farrel-comment"
         class="fixed bottom-0 left-0 right-0 hidden border-t border-t-muted bg-white p-1 text-center text-sm text-muted-foreground print:hidden xl:block"
       >
-        <!-- TODO: Give my personal comment on where the cursor is poiting at, ex: "This project was really hard!" -->
-        <!-- TODO: Or, randomly give an instruction, ex: "Checkout courses that I took!" (Clickable, then direct the user to the page) -->
         Hello :)
       </p>
       <!-- <button
@@ -943,4 +985,5 @@
       </button> -->
     </main>
   </body>
+  <script src="script.js"></script>
 </html>
