@@ -22,6 +22,10 @@
     -webkit-tap-highlight-color: transparent
 }
 
+#new-portfolio:hover{
+    color: #9ca3af
+}
+
 body {
     margin: 0;
     line-height: inherit
@@ -403,6 +407,10 @@ body {
 
 .right-4 {
     right: 1rem
+}
+
+.right-8 {
+    right: 2.5rem
 }
 
 .top-4 {
